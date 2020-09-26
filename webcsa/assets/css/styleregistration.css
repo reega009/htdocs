@@ -1,0 +1,237 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow: hidden;
+}
+
+/* Background */
+.wave {
+	position: fixed;
+	height: 60%;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	transform: rotate(180deg);
+}
+
+.wave2 {
+	position: fixed;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+
+}
+
+/* Container pakai Grid untuk membagi jadi 2 Column  */
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7rem;
+	padding: 0 0rem;
+}
+
+.img img {
+	padding-top: 200px;
+	padding-left: 24px;
+	width: 700px;
+	height: 400px;
+}
+
+.login-content {
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	margin-top: 25px;
+}
+
+form {
+	width: 460px;
+}
+
+.headertitle {
+	position: relative;
+	display: grid;
+	grid-template-columns: 19% 10%;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.regisicon {
+	width: 75px;
+}
+
+form h2 {
+	font-size: 38px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #333;
+}
+
+/* Grid untuk icon posisi box*/
+.login-content .input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 90%;
+	/* 7 buat icon 9 buat box input*/
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+
+}
+
+/* Icon */
+.i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #999;
+	font-size: 25px;
+}
+
+.i i {
+	transition: 0.5s;
+}
+
+/* repair */
+
+.input-div.one {
+	margin-top: 0;
+
+}
+
+.input-div.two {
+	margin-bottom: 20px;
+}
+
+/* Div position input */
+.input-div>div {
+	position: relative;
+	height: 45px;
+}
+
+/* Tulisan Username dan Password */
+.input-div>div>h5 {
+	position: absolute;
+	left: 18px;
+	top: 22px;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+.input-div:before,
+.input-div:after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: #38d39f;
+	transition: 0.3s;
+}
+
+.input-div:before {
+	right: 50%;
+}
+
+.input-div:after {
+	left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+	width: 50%;
+}
+
+.input-div.focus>div>h5 {
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus>.i>i {
+	color: #38d39f;
+	font-size: 30px;
+}
+
+/* Inputan username password */
+.input-div>div>input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 5px 18px;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	color: #555;
+}
+
+input-div.pass {
+	margin-bottom: 4px;
+}
+
+/* Button lupa password */
+a {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	/*Menghilangkan garis bawah */
+	color: #999;
+	font-size: 14px;
+	transition: 0.3s;
+	margin-top: -6px;
+	text-align: center;
+}
+
+
+
+
+a.haveaccount:hover {
+	color: #32be8f;
+	font-size: 15px;
+}
+
+/* button Login */
+.btn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	background-size: 200%;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background-position: right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.input-div>div>small {
+	color: red;
+	font-size: 15px;
+	padding-left: -10px;
+	padding-top: 10px;
+}
