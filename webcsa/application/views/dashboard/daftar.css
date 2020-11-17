@@ -1,0 +1,266 @@
+/* Style */
+.bg-warna01{
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+}
+
+mainmenu-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px 140px 15px 0;
+    background: transparent;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+.mainmenu-area:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.mainmenu-area.affix {
+    position: fixed;
+    top: 0;
+}
+
+.mainmenu-area.affix:before {
+    opacity: 1;
+}
+
+.mainmenu-area .right-button {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+.mainmenu-area .right-button a {
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mainmenu-area .right-button a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #768ede;
+}
+
+
+.mainmenu-area ul.mainmenu {
+    text-align: center;
+    float: none;
+    display: block;
+}
+
+.mainmenu-area ul.mainmenu li {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.mainmenu-area ul.nav.navbar-nav li a {
+    color: #ffffff;
+    padding: 10px 2px;
+    text-transform: capitalize;
+    background: transparent;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    margin: 0 15px;
+}
+
+
+.mainmenu-area ul.nav.navbar-nav li a:hover,
+.mainmenu-area ul.nav.navbar-nav li.active a {
+    border-bottom-color: #ffffff
+}
+
+.mainmenu-area .navbar-brand {
+    height: auto;
+    padding:  15px;
+}
+
+.mainmenu-area .navbar-brand img {
+    height: 40px;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #8790af;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bttn-submit {
+    position: relative;
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 10px;
+    border: none;
+}
+
+.bttn-submit img {
+    height: 20px;
+    margin-right: 5px;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+
+
+.bttn-submit:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.bttn-submit.active,
+.bttn-submit:hover {
+    color: #ffffff;
+}
+
+.bttn-submit.active:before,
+.bttn-submit:hover:before {
+    opacity: 0;
+}
+
+.bttn-default,
+.bttn-submit {
+    padding: 12px 30px;
+    background-color: #ffffff;
+    display: inline-block;
+    color: #768ede;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+}
+
+.bttn-reset {
+    position: relative;
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 10px;
+    border: none;
+}
+
+.bttn-reset img {
+    height: 20px;
+    margin-right: 5px;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+
+
+.bttn-reset:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.bttn-reset.active,
+.bttn-reset:hover {
+    color: #ffffff;
+}
+
+.bttn-reset.active:before,
+.bttn-reset:hover:before {
+    opacity: 0;
+}
+
+.bttn-default,
+.bttn-reset {
+    padding: 12px 30px;
+    background-color: #ffffff;
+    display: inline-block;
+    color: #768ede;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+}
+
+
+
