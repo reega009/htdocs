@@ -103,19 +103,19 @@
                 <label for="jenis_kelamin">Jenis Kelamin:</label>
                 <select id="jenis_kelamin" name="jenis_kelamin" class="form-control">
                     <option value=""> Pilih Jenis Kelamin </option>
-                    <option value=""> Laki-Laki </option>
-                    <option value=""> Perempuan </option>
+                    <option value="Laki-Laki"> Laki-Laki </option>
+                    <option value="Perempuan"> Perempuan </option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="agama">Agama:</label>
                 <select id="agama" name="agama" class="form-control">
                     <option value=""> Pilih Agama </option>
-                    <option value=""> Islam </option>
-                    <option value=""> Kristen </option>
-                    <option value=""> Katolik </option>
-                    <option value=""> Hindu </option>
-                    <option value=""> Budha </option>
+                    <option value="Islam"> Islam </option>
+                    <option value="Kristen"> Kristen </option>
+                    <option value="Katolik"> Katolik </option>
+                    <option value="Hindu"> Hindu </option>
+                    <option value="Budha"> Budha </option>
                 </select>
             </div>
             <div class="form-group">
@@ -130,10 +130,10 @@
                 <label for="program_studi">Program Studi:</label>
                 <select id="program_studi" name="program_studi" class="form-control">
                     <option value=""> Pilih Program Studi </option>
-                    <option value="program_studi"> Teknik Informatika-S1 </option>
-                    <option value="program_studi"> Rekayasa Perangkat Lunak-S1 </option>
-                    <option value="program_studi"> Manajemen Informatika-D3 </option>
-                    <option value="program_studi"> Komputerisasi Akuntansi </option>
+                    <option value="Teknik Informatika S-1"> Teknik Informatika-S1 </option>
+                    <option value="Rekayasa Perangkat Lunak S-1"> Rekayasa Perangkat Lunak-S1 </option>
+                    <option value="Manajemen Informatika-D3"> Manajemen Informatika-D3 </option>
+                    <option value="Komputerisasi Akuntansi"> Komputerisasi Akuntansi </option>
                 </select>
                 <?php echo form_error('program_studi','<div class="text-danger small" ml-3></div>')?>
             </div>
@@ -170,14 +170,19 @@
                 <label for="divisi"> Divisi Yang Akan Diambil? </label>
                 <select id="divisi" name="quis_4" class="form-control">
                     <option value=""> Pilih Divisi </option>
-                    <option value=""> Pemrograman </option>
-                    <option value=""> Multimedia </option>
+                    <option value="Pemograman"> Pemrograman </option>
+                    <option value="Multimedia"> Multimedia </option>
                 </select>
             </div>
             <div class="form-group">
                 <label> Output/Hasil Yang Ingin Dicapai:</label>
                 <input type="text" name="quis_5" class="form-control"
                     placeholder="Masukan Output/Hasil Yang Ingin Dicapai" />
+            </div>
+            <div class="form-group">
+                <label for="">Apakah saudara memiliki keahlian di bidang IT ?</label>
+                <input type="text" name="quis_6" class="form-control"
+                placeholder="Masukan Jawaban">
             </div>
             <button type="submit" name="daftar" class="bttn-submit">Daftar</button>
             <button reset="reset" name="reset" class="bttn-reset">Reset</button>

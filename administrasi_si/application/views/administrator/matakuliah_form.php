@@ -25,7 +25,7 @@
         </div>
         <div class="form-group">
             <label for="">Semester</label>
-            <select name="sks" class="form-control">
+            <select name="semester" class="form-control">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -44,7 +44,6 @@
                     <option value="<?php echo $prd->nama_prodi?>"><?php echo $prd->nama_prodi?></option>
                 <?php endforeach ;?>
             </select>
-            <?php echo form_error('nama_prodi','<div class="text-danger sm ml-3"></div>')?>
         </div>
         <button type="submit" class="btn btn-primary btn-sm">SIMPAN</button>
     </form>

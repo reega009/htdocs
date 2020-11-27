@@ -100,7 +100,7 @@
                     </div>
                     <div class="space-20"></div>
                     <a href="<?php echo base_url('Pendaftaran_csa/daftar')?>" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i
-                            class="lnr lnr-arrow-right"></i>Daftar Sekarang</a>
+                            class="lnr lnr-arrow-right"></i>PENDAFTARAN CSA</a>
                 </div>
             </div>
         </div>

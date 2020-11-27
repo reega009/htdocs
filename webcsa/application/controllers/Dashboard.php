@@ -24,5 +24,12 @@
             $this->load->view('dashboard/pendaftaran_detail_csa.php',$data);
             $this->load->view('dashboard/template/footer.php');    
         }
+        public function hapus_data($id)
+        {
+            $where=array('nim'=>$id);
+            $this->pendaftaran_model->hapus_data($where,'pendaftaran_csa');
+            $this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Data Berhasil Di Hapus</div> ');
+            redirect('Dashboard/daftar_sekarang');
         }
+    }
 ?>

@@ -5,8 +5,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/stylesignup.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
-
 </head>
 <img class="wave" src="<?= base_url('assets/'); ?>images/wave.png" alt="">
 <div class="container">

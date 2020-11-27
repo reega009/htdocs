@@ -26,12 +26,12 @@
                 <td><?php echo $prd->kode_prodi ?></td>
                 <td><?php echo $prd->nama_prodi ?></td>
                 <td><?php echo $prd->nama_jurusan ?></td>
-                <td width="20px"><?php echo anchor('administrator/prodi/update/'.$prd->id_prodi,'<div class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></div>')?></td>
-                    <td width="20px"><?php echo anchor('administrator/prodi/hapus_data/'.$prd->id_prodi,'<div class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></div>')?></td> 
+                <td width="20px"><?php echo anchor('administrator/prodi/update/'.$prd->id_prodi,'<div class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></div>');?></td>
+                <td width="20px"><?php echo anchor('administrator/prodi/hapus_data/'.$prd->id_prodi,'<div class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></div>');?></td> 
             </tr>
 
 
-        <?php endforeach ?>
+        <?php endforeach; ?>
 
 
     </table>

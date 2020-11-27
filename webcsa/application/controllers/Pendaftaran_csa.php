@@ -29,6 +29,7 @@
                 $quis_3 = $this->input->post('quis_3');
                 $quis_4 = $this->input->post('quis_4');
                 $quis_5 = $this->input->post('quis_5');
+                $quis_6 = $this->input->post('quis_6');
 
                 $data = array(
                     'nim'=>$nim,
@@ -47,6 +48,7 @@
                     'quis_3'=>$quis_3,
                     'quis_4'=>$quis_4,
                     'quis_5'=>$quis_5,
+                    'quis_6'=>$quis_6
                 );
 
                 $this->pendaftaran_model->insert_data($data,'pendaftaran_csa');
@@ -60,5 +62,6 @@
             $this->form_validation->set_rules('nama_lengkap', 'nama_lengkap', 'required',['required' =>'Nama Lengkap Wajib Diisi!']);
             $this->form_validation->set_rules('program_studi', 'program_studi', 'required',['required' =>'Program Studi Wajib Diisi!']);
         }
+       
     }
 ?>

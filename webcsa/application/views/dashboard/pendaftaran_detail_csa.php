@@ -34,7 +34,7 @@
             <td><?php echo $pdfcsa->alamat ?></td>
         </tr>
         <tr>
-            <td>Emaik</td>
+            <td>Email</td>
             <td> : </td>
             <td><?php echo $pdfcsa->email ?></td>
         </tr>
@@ -56,27 +56,32 @@
         <tr>
             <td>Pengalaman Organisasi</td>
             <td> : </td>
-            <td><?php echo $pdfcsa->pengalaman_organisasi ?></td>
+            <td><?php echo $pdfcsa->quis_1 ?></td>
         </tr>
         <tr>
             <td>Apa Yang Kamu Ketahui Tentang CSA</td>
             <td> : </td>
-            <td><?php echo $pdfcsa->quis_1 ?></td>
+            <td><?php echo $pdfcsa->quis_2 ?></td>
         </tr>
         <tr>
             <td>Alasan Mendaftar Menjadi Anggota CSA</td>
             <td> : </td>
-            <td><?php echo $pdfcsa->quis_2 ?></td>
+            <td><?php echo $pdfcsa->quis_3 ?></td>
         </tr>
         <tr>
             <td>Divisi Yang Akan Diambil</td>
             <td> : </td>
-            <td><?php echo $pdfcsa->quis_3 ?></td>
+            <td><?php echo $pdfcsa->quis_4 ?></td>
         </tr>
         <tr>
             <td>Output/Hasil Yang Ingin Dicapai</td>
             <td> : </td>
             <td><?php echo $pdfcsa->quis_5 ?></td>
+        </tr>
+        <tr>
+            <td>Keahlian yang dimiliki di bidang IT?</td>
+            <td> : </td>
+            <td><?php echo $pdfcsa->quis_6 ?></td>
         </tr>
         
     </table>
